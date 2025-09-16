@@ -82,10 +82,10 @@
 
         terminal-move {
             bindings = <
-&trans  &trans  &kp LS(LG(TAB))   &kp LA(LG(UP_ARROW))    &kp LG(TAB)        &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LG(LA(LEFT))  &kp LA(LG(DOWN_ARROW))  &kp LG(LA(RIGHT))  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans            &trans                  &trans             &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans                  &trans             &trans    &trans  &trans  &trans
+&trans  &trans            &kp LG(LA(UP_ARROW))  &trans             &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(LA(LEFT))  &kp LG(LA(DOWN))      &kp LA(LG(RIGHT))  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans                &trans             &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                                &trans             &trans  &trans    &trans  &trans  &trans
             >;
         };
 
