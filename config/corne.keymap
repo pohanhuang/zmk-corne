@@ -67,7 +67,7 @@
             bindings = <
 &trans  &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK         &kp C_VOLUME_UP      &trans                  &trans                       &kp UP_ARROW  &trans                  &trans                  &trans
 &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &kp C_VOLUME_DOWN    &trans                  &kp LEFT                     &kp DOWN      &kp RIGHT               &trans                  &trans
-&trans  &trans  &kp C_AC_BACK   &trans          &kp C_AC_FORWARD  &kp K_MUTE           &hm RIGHT_GUI LG(LEFT)  &hm LEFT_GUI LA(LEFT_ARROW)  &trans        &hm LEFT_GUI LA(RIGHT)  &hm LEFT_GUI RG(RIGHT)  &trans
+&trans  &trans  &kp LG(LBKT)     &trans          &kp LG(RBKT)      &kp K_MUTE           &hm RIGHT_GUI LG(LEFT)  &hm LEFT_GUI LA(LEFT_ARROW)  &trans        &hm LEFT_GUI LA(RIGHT)  &hm LEFT_GUI RG(RIGHT)  &trans
                                 &trans          &trans            &trans               &trans                  &trans                       &trans
             >;
         };
