@@ -15,7 +15,7 @@
 
 &mt {
     require-prior-idle-ms = <80>;
-    quick-tap-ms = <175>;
+    quick-tap-ms = <100>;
     hold-trigger-key-positions = <38>;
     hold-trigger-on-release;
     tapping-term-ms = <120>;
