@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // Personal include
 
@@ -64,10 +65,10 @@
 
         arrow-layer {
             bindings = <
-&trans  &trans  &trans            &kp LG(LA(UP_ARROW))  &kp LG(TAB)        &kp C_VOLUME_UP      &trans                  &trans                       &kp UP_ARROW  &trans                  &trans                  &trans
-&trans  &trans  &kp LA(LG(LEFT))  &kp LG(LA(DOWN))      &kp LA(LG(RIGHT))  &kp C_VOLUME_DOWN    &trans                  &kp LEFT                     &kp DOWN      &kp RIGHT               &trans                  &trans
-&trans  &trans  &trans            &trans                &trans             &kp K_MUTE           &hm RIGHT_GUI LG(LEFT)  &hm LEFT_GUI LA(LEFT_ARROW)  &trans        &hm LEFT_GUI LA(RIGHT)  &hm LEFT_GUI RG(RIGHT)  &trans
-                                  &trans                &trans             &trans               &trans                  &trans                       &trans
+&trans  &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK         &kp C_VOLUME_UP      &trans                  &trans                       &kp UP_ARROW  &trans                  &trans                  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &kp C_VOLUME_DOWN    &trans                  &kp LEFT                     &kp DOWN      &kp RIGHT               &trans                  &trans
+&trans  &trans  &kp C_AC_BACK   &trans          &kp C_AC_FORWARD  &kp K_MUTE           &hm RIGHT_GUI LG(LEFT)  &hm LEFT_GUI LA(LEFT_ARROW)  &trans        &hm LEFT_GUI LA(RIGHT)  &hm LEFT_GUI RG(RIGHT)  &trans
+                                &trans          &trans            &trans               &trans                  &trans                       &trans
             >;
         };
 
