@@ -14,12 +14,11 @@
 #include "includes/settings.dtsi"
 
 &mt {
-    require-prior-idle-ms = <120>;
+    require-prior-idle-ms = <80>;
     quick-tap-ms = <0>;
-    hold-trigger-key-positions = <38>;
     hold-trigger-on-release;
     tapping-term-ms = <200>;
-    flavor = "tap-preferred";
+    flavor = "hold-preferred";
 };
 
 &lt {
