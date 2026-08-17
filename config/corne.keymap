@@ -14,11 +14,12 @@
 #include "includes/settings.dtsi"
 
 &mt {
-    require-prior-idle-ms = <80>;
-    quick-tap-ms = <100>;
+    require-prior-idle-ms = <120>;
+    quick-tap-ms = <175>;
     hold-trigger-key-positions = <38>;
     hold-trigger-on-release;
-    tapping-term-ms = <120>;
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
 };
 
 &lt {
@@ -44,7 +45,7 @@
 &kp TAB    &kp Q        &kp W           &kp E           &kp R             &kp T                     &kp Y        &kp U         &kp I            &kp O           &kp P                &kp BSPC
 &kp LCTRL  &hm LCTRL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &hm LEFT_SHIFT F  &kp G                     &kp H        &hm RSHFT J   &hm RIGHT_GUI K  &hm LEFT_ALT L  &hm RCTRL SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z        &kp X           &kp C           &kp V             &kp B                     &kp N        &kp M         &kp COMMA        &kp DOT         &kp FSLH             &kp ESC
-                                        &lt 4 TAB       &lt 3 ESCAPE      &hm LEFT_COMMAND SPACE    &lt 2 ENTER  &lt 1 DELETE  &kp BACKSPACE
+                                        &lt 4 TAB       &lt 3 ESCAPE      &mt LEFT_COMMAND SPACE    &lt 2 ENTER  &lt 1 DELETE  &kp BACKSPACE
             >;
         };
 
