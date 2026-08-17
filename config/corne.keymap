@@ -60,7 +60,7 @@
 &kp TAB    &kp Q        &kp W           &kp E           &kp R             &kp T                     &kp Y        &kp U         &kp I            &kp O           &kp P                &kp BSPC
 &kp LCTRL  &hm LCTRL A  &hm LEFT_ALT S  &hmc LEFT_GUI D  &hm LEFT_SHIFT F  &kp G                     &kp H        &hm RSHFT J   &hmc RIGHT_GUI K  &hm LEFT_ALT L  &hm RCTRL SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z        &kp X           &kp C           &kp V             &kp B                     &kp N        &kp M         &kp COMMA        &kp DOT         &kp FSLH             &kp ESC
-                                        &lt 4 TAB       &lt 3 ESCAPE      &cmd_lt 6 SPACE    &lt 2 ENTER  &lt 1 DELETE  &kp BACKSPACE
+                                        &lt 4 TAB       &lt 3 ESCAPE      &kp SPACE    &lt 2 ENTER  &lt 1 DELETE  &kp BACKSPACE
             >;
         };
 
