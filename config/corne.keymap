@@ -44,7 +44,7 @@
 &kp TAB    &kp Q        &kp W           &kp E           &kp R             &kp T                     &kp Y        &kp U         &kp I            &kp O           &kp P                &kp BSPC
 &kp LCTRL  &hm LCTRL A  &hm LEFT_ALT S  &hmc LEFT_GUI D  &hm LEFT_SHIFT F  &kp G                     &kp H        &hm RSHFT J   &hmc RIGHT_GUI K  &hm LEFT_ALT L  &hm RCTRL SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z        &kp X           &kp C           &kp V             &kp B                     &kp N        &kp M         &kp COMMA        &kp DOT         &kp FSLH             &kp ESC
-                                        &lt 4 TAB       &lt 3 ESCAPE      &kp SPACE    &lt 2 ENTER  &lt 1 DELETE  &kp BACKSPACE
+                                        &lt 4 TAB       &lt 3 ESCAPE      &lt 6 SPACE    &lt 2 ENTER  &lt 1 DELETE  &kp BACKSPACE
             >;
         };
 
@@ -102,6 +102,15 @@
 &trans  &kp LG(LA(LEFT))  &kp LG(LA(DOWN))      &kp LA(LG(RIGHT))  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans            &trans                &trans             &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                                 &trans             &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        cmd_layer {
+            bindings = <
+&trans  &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp LG(Y)  &kp LG(U)  &kp LG(I)      &kp LG(O)    &kp LG(P)     &trans
+&trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &kp LG(H)  &kp LG(J)  &kp LG(K)      &kp LG(L)    &kp LG(SEMICOLON)  &kp LG(SQT)
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)  &trans
+                                        &trans     &trans     &trans      &trans     &trans       &trans
             >;
         };
     };
