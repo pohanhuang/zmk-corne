@@ -11,7 +11,6 @@
 
 // Personal include
 
-#include "includes/settings.dtsi"
 
 &mt {
     require-prior-idle-ms = <50>;
@@ -23,15 +22,26 @@
 
 / {
     behaviors {
-        cmd_lt: cmd_layer_tap {
+        hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "CMD_LAYER_TAP";
+            label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            require-prior-idle-ms = <80>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <125>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+
+        space_cmd: space_cmd {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACE_CMD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <125>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
         };
     };
 };
@@ -59,7 +69,7 @@
 &kp TAB    &kp Q        &kp W           &kp E           &kp R             &kp T                     &kp Y        &kp U         &kp I            &kp O           &kp P                &kp BSPC
 &kp LCTRL  &hm LCTRL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &hm LEFT_SHIFT F  &kp G                     &kp H        &hm RSHFT J   &hm RIGHT_GUI K  &hm LEFT_ALT L  &hm RCTRL SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z        &kp X           &kp C           &kp V             &kp B                     &kp N        &kp M         &kp COMMA        &kp DOT         &kp FSLH             &kp ESC
-                                        &lt 4 TAB       &lt 3 ESCAPE      &cmd_lt 6 SPACE    &lt 2 ENTER  &lt 1 DELETE  &kp BACKSPACE
+                                        &lt 4 TAB       &lt 3 ESCAPE      &space_cmd LEFT_GUI SPACE    &lt 2 ENTER  &lt 1 DELETE  &kp BACKSPACE
             >;
         };
 
