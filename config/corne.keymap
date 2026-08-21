@@ -21,6 +21,18 @@
 };
 
 / {
+    macros {
+        paste_once: paste_once {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp LG(V)>;
+        };
+    };
+};
+
+/ {
     behaviors {
         lhm: left_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -150,7 +162,7 @@
             bindings = <
 &trans  &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp LG(Y)  &kp LG(U)  &kp LG(I)      &kp LG(O)    &kp LG(P)     &trans
 &trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &kp LG(H)  &kp LG(J)  &kp LG(K)      &kp LG(L)    &kp LG(SEMICOLON)  &kp LG(SQT)
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &paste_once  &kp LG(B)    &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)  &trans
                                         &trans     &trans     &trans      &trans     &trans       &trans
             >;
         };
