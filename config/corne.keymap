@@ -64,11 +64,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "CMD_SPACE";
             #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick-tap-ms = <120>;
-            require-prior-idle-ms = <80>;
+            tapping-term-ms = <160>;
+            quick-tap-ms = <80>;
+            require-prior-idle-ms = <30>;
             flavor = "hold-preferred";
-            hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
         };
     };
