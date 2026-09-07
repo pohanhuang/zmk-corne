@@ -36,7 +36,6 @@
     behaviors {
         lhm: left_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             quick-tap-ms = <120>;
@@ -49,7 +48,6 @@
 
         rhm: right_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "RIGHT_HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             quick-tap-ms = <120>;
@@ -61,6 +59,8 @@
         };
 
         cmd_space: cmd_space {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
