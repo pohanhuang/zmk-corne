@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "github>pohanhuang/dependency-automation:renovate"
+  ]
+}
