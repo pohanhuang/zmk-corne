@@ -7,10 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 // Personal include
-
 
 &mt {
     require-prior-idle-ms = <50>;
@@ -90,10 +88,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q        &kp W           &kp E           &kp R             &kp T                     &kp Y        &kp U         &kp I            &kp O           &kp P                &kp BSPC
-&kp LCTRL  &lhm LCTRL A  &lhm LEFT_ALT S  &lhm LEFT_GUI D  &lhm LEFT_SHIFT F  &kp G                     &kp H        &rhm RSHFT J   &rhm RIGHT_GUI K  &rhm LEFT_ALT L  &rhm RCTRL SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z        &kp X           &kp C           &kp V             &kp B                     &kp N        &kp M         &kp COMMA        &kp DOT         &kp FSLH             &kp ESC
-                                        &lt 4 TAB       &lt 3 ESCAPE      &kp SPACE                    &lt 2 ENTER  &lt 1 DELETE  &kp BACKSPACE
+&kp TAB    &kp Q         &kp W            &kp E            &kp R              &kp T        &kp Y        &kp U         &kp I             &kp O            &kp P                 &kp BSPC
+&kp LCTRL  &lhm LCTRL A  &lhm LEFT_ALT S  &lhm LEFT_GUI D  &lhm LEFT_SHIFT F  &kp G        &kp H        &rhm RSHFT J  &rhm RIGHT_GUI K  &rhm LEFT_ALT L  &rhm RCTRL SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z         &kp X            &kp C            &kp V              &kp B        &kp N        &kp M         &kp COMMA         &kp DOT          &kp FSLH              &kp ESC
+                                          &lt 4 TAB        &lt 3 ESCAPE       &kp SPACE    &lt 2 ENTER  &lt 1 DELETE  &kp BACKSPACE
             >;
         };
 
@@ -114,10 +112,10 @@
 
         arrow-layer {
             bindings = <
-&trans  &trans          &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans             &trans                  &trans                       &kp UP_ARROW  &trans                  &trans                  &trans
-&trans  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT    &trans                  &kp LEFT                     &kp DOWN      &kp RIGHT               &trans                  &trans
-&trans  &trans          &kp LG(LBKT)    &trans          &kp LG(RBKT)     &trans             &rhm RIGHT_GUI LG(LEFT)  &rhm LEFT_GUI LA(LEFT_ARROW)  &trans        &rhm LEFT_GUI LA(RIGHT)  &rhm LEFT_GUI RG(RIGHT)  &trans
-                                        &trans          &trans           &trans             &trans                  &trans                       &trans
+&trans  &trans  &trans        &trans  &trans        &trans    &trans                   &trans                        &kp UP_ARROW  &trans                   &trans                   &trans
+&trans  &trans  &trans        &trans  &trans        &trans    &trans                   &kp LEFT                      &kp DOWN      &kp RIGHT                &trans                   &trans
+&trans  &trans  &kp LG(LBKT)  &trans  &kp LG(RBKT)  &trans    &rhm RIGHT_GUI LG(LEFT)  &rhm LEFT_GUI LA(LEFT_ARROW)  &trans        &rhm LEFT_GUI LA(RIGHT)  &rhm LEFT_GUI RG(RIGHT)  &trans
+                              &trans  &trans        &trans    &trans                   &trans                        &trans
             >;
         };
 
@@ -156,10 +154,10 @@
 
         cmd_layer {
             bindings = <
-&trans  &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp LG(Y)  &kp LG(U)  &kp LG(I)      &kp LG(O)    &kp LG(P)     &trans
-&trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &kp LG(H)  &kp LG(J)  &kp LG(K)      &kp LG(L)    &kp LG(SEMICOLON)  &kp LG(SQT)
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &paste_once  &kp LG(B)    &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)  &trans
-                                        &trans     &trans     &trans      &trans     &trans       &trans
+&trans  &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)    &kp LG(T)    &kp LG(Y)  &kp LG(U)  &kp LG(I)      &kp LG(O)    &kp LG(P)          &trans
+&trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)    &kp LG(G)    &kp LG(H)  &kp LG(J)  &kp LG(K)      &kp LG(L)    &kp LG(SEMICOLON)  &kp LG(SQT)
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &paste_once  &kp LG(B)    &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)       &trans
+                              &trans     &trans       &trans       &trans     &trans     &trans
             >;
         };
     };
